@@ -64,7 +64,7 @@ io.on('connection', socket => {
     });
 });
 
-server.listen({ port: 9000 }, async () => {
+server.listen({ port: process.env.PORT || 9000 }, async () => {
     console.log("slusam na portu 9000");
     await sequelize.authenticate();
 });
