@@ -13,7 +13,7 @@ const http = require('http');
 const server = http.createServer(app);
 const io =  new Server(server, {
     cors: {
-        origin: 'http://127.0.0.1:8000',
+        origin: 'http://app413.herokuapp.com/',
         methods: ['GET', 'POST'],
         credentials: true
     },
